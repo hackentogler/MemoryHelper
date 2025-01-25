@@ -25,7 +25,7 @@ struct LockerView: View {
                                 VStack {
                                     Image(systemName: "arrow.up.arrow.down.circle.fill")
                                         .font(.largeTitle)
-                                        .foregroundColor(.yellow)
+                                        .foregroundColor(.blue)
                                     Text("Sort")
                                         .font(.caption)
                                 }
@@ -61,7 +61,7 @@ struct LockerView: View {
                                 VStack {
                                     Image(systemName: "magnifyingglass")
                                         .font(.largeTitle)
-                                        .foregroundColor(.blue)
+                                        .foregroundColor(.gray)
                                     Text("Filter")
                                         .font(.caption)
                                 }
