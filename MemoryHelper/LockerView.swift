@@ -161,7 +161,6 @@ struct LockerView: View {
                                     .font(.body)
                                     .foregroundColor(.secondary)
 
-                                // Row of buttons that wraps
                                 HStack {
                                     Spacer()
                                     Button(action: {
