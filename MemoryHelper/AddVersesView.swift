@@ -41,7 +41,12 @@ struct AddVersesView: View {
     
     var body: some View {
         NavigationView {
-            //ScrollView {
+            ZStack {
+                Color(.systemBackground)
+                    .ignoresSafeArea()
+                    .onTapGesture {
+                        dismissKeyboard()
+                    }
                 VStack {
                     Button(action: {
                         print("Action 1 tapped")
@@ -71,8 +76,12 @@ struct AddVersesView: View {
                 }
                 .navigationTitle("Add Verses")
                 .padding()
-            //}
+            }
         }
+    }
+    
+    private func dismissKeyboard() {
+        UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
     }
 }
 
